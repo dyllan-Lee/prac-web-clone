@@ -1,0 +1,337 @@
+/* common */
+.w100 {
+  width: 100%;
+  padding: 0 70px;
+  box-sizing: border-box;
+}
+
+/* 헤더 */
+header {
+  position: fixed;
+  z-index: 999999;
+  /* width: 100%; */
+  /* padding:  0 70px; */
+  box-sizing: border-box;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+/* 모바일 네비 */
+#mobile_nav {
+  display: none;
+}
+
+#mobile_nav span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #111;
+}
+
+#mobile_nav span:nth-child(2) {
+  margin: 5px 0;
+}
+
+/* h로고  */
+#h_logo>a {
+  display: block;
+  width: 173px;
+  height: 50px;
+  background-image: url(../img/logo.png);
+}
+
+/* h_nav */
+#gnb_bg {
+  background-color: #fff;
+  border-top: 1px solid #e6e6e6;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  transition: height 0.2s;
+}
+
+/* #gnb_bg : 높이값으로 관리 */
+#gnb:hover>#gnb_bg {
+  height: 190px;
+}
+
+#gnb>ul {
+  display: flex;
+}
+
+#gnb>ul>li {
+  padding: 0 30px;
+  margin: 0 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#gnb>ul>li>a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #181c1c;
+  font-weight: 600;
+  text-align: center;
+  display: block;
+}
+
+/* 서브네비 : 블록과 논으로 관리*/
+.lnb {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: height 0.2s;
+}
+
+#gnb:hover .lnb {
+  display: block;
+}
+
+.lnb>li>a {
+  display: block;
+  text-decoration: none;
+  color: #777;
+  font-size: 0.938rem;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.lnb>li>a:hover {
+  text-decoration: underline;
+  color: #8d7249;
+}
+
+/* h_icon */
+#h_icon {
+  display: flex;
+}
+
+/* h_call */
+.h_call {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+/* .call_icon */
+.call_icon {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-image: url(../img/tel-bl.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.call_txt {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.h_insta>a {
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-image: url(../img/insta-wh.png);
+  background-color: #181c1c;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* footer */
+.inner_fot {
+  padding-top: 105px;
+  padding-bottom: 160px;
+  background-color: #2a2d2e;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.inner_fot>h1 {
+  margin-bottom: 40px;
+}
+
+.inner_fot>p {
+  color: rgba(170, 171, 171, 0.5);
+  font-size: 0.75rem;
+  line-height: 1.667em;
+  font-weight: 300;
+  margin-bottom: 35px;
+}
+
+.inner_fot>ul {
+  color: rgba(170, 171, 171, 0.5);
+  font-size: 0.875rem;
+  line-height: 1.714em;
+  font-weight: 300;
+  margin-bottom: 35px;
+}
+
+.add {
+  display: inline-block;
+}
+
+.bar {
+  position: relative;
+  margin-right: 15px;
+}
+
+.bar::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 12px;
+  background-color: rgba(170, 171, 171, 0.5);
+  margin: 10px;
+  position: absolute;
+  top: -5px;
+  right: -20px;
+}
+
+.inner_fot>.brand {
+  color: #aaabab;
+  font-size: 0.875rem;
+}
+
+.inner_fot>.brand>span>b {
+  font-size: 1.125rem;
+  margin-left: 10px;
+  margin-right: 25px;
+}
+
+.top_btn {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+}
+
+
+/* 미디어 */
+@media (max-width:1500px) {
+  html {
+    font-size: 14px;
+  }
+
+  .w100 {
+    padding: 0 40px;
+  }
+
+  #gnb>ul>li {
+    padding: 0 15px;
+    margin: 0px;
+  }
+
+  .lnb>li>a {
+    padding-top: 20px;
+  }
+
+  #gnb:hover>.gnb_bg {
+    height: 230px;
+  }
+
+}
+
+@media (max-width:1024px) {
+  .w100 {
+    padding: 0 20px;
+  }
+
+  header {
+    height: 80px;
+  }
+
+  /* h로고  */
+  #h_logo>a {
+    width: 126px;
+    height: 36px;
+    background-size: cover;
+    margin-left: 40px;
+  }
+
+  #gnb {
+    display: none;
+  }
+
+  /* 모바일 네비 */
+  #mobile_nav {
+    display: block;
+  }
+
+  .h_call {
+    margin-right: 0px;
+  }
+
+  .call_txt {
+    display: none;
+  }
+
+  .h_insta>a {
+    border-radius: 0;
+    background-image: url(../img/insta-bl.png);
+    background-color: transparent;
+  }
+
+
+  /* footer */
+  footer.w100 {
+    padding: 0;
+  }
+
+  .inner_fot {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    margin-bottom: 40px;
+  }
+
+  .inner_fot>h1 {
+    margin-bottom: 20px;
+  }
+
+  .inner_fot>h1>img {
+    width: 130px;
+    height: 38px;
+  }
+
+  .inner_fot>p {
+    margin-bottom: 20px;
+  }
+
+  .inner_fot>ul {
+    margin-bottom: 20px;
+  }
+
+  .add {
+    display: inline-block;
+  }
+
+  .bar {
+    position: relative;
+    margin-right: 15px;
+  }
+
+  .inner_fot>.brand {
+    font-size: 0.7rem;
+  }
+
+  .inner_fot>.brand>span>b {
+    font-size: 1rem;
+  }
+
+  .top_btn {
+    bottom: 40px;
+  }
+
+  .bar::after {
+    display: none;
+  }
+}

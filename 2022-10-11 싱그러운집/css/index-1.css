@@ -1,0 +1,462 @@
+@import url(common/reset1.css);
+
+/* common */
+.w1200 {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.sp_common {
+  background-image: url(../img/logo.png);
+}
+
+#header_top_wrap {
+  background-color: #f2f2f2;
+}
+
+#header_bottom_wrap {
+  border-bottom: 1px solid #d9d9d9;
+  position: relative;
+}
+
+#header_top {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#header_top ul {
+  display: flex;
+  line-height: 40px;
+}
+
+
+.h_top_left a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+  margin: 10px 1px;
+  text-indent: -99999px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.gp {
+  background-image: url(../img/u_gp.png);
+}
+
+.ap {
+  background-image: url(../img/u_ap.png);
+}
+
+.ip {
+  background-image: url(../img/u_in.png);
+}
+
+.kp {
+  background-image: url(../img/u_kc.png);
+}
+
+.fp {
+  background-image: url(../img/u_fb.png);
+}
+
+.yp {
+  background-image: url(../img/u_yt.png);
+}
+
+.h_top_right li {
+  margin-left: 20px;
+}
+
+.h_top_right li a {
+  color: #808080;
+  font-size: 12px;
+}
+
+#header_bottom h1 {
+  padding-top: 20px;
+}
+
+#header_bottom h1 a {
+  display: block;
+  width: 160px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+#h_bot_fix {
+  position: relative;
+  padding: 12px 0;
+}
+
+.h_bot_left {
+  display: flex;
+  align-items: center;
+}
+
+.m_btns {
+  width: 26px;
+  height: 17px;
+  background-position: -22px -32px;
+}
+
+.h_bot_left ul {
+  display: flex;
+  padding-left: 32px;
+}
+
+.h_bot_left ul li a {
+  display: block;
+  padding: 0 17px;
+  font-weight: 700;
+  color: #222624;
+  line-height: 40px;
+}
+
+.h_bot_right {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 12px;
+}
+
+.h_bot_right ul {
+  display: flex;
+}
+
+.h_bot_right ul li {
+  width: 45px;
+  height: 40px;
+  position: relative;
+}
+
+.h_bot_right a {
+  display: block;
+  position: absolute;
+}
+
+.mypage {
+  left: 12px;
+  top: 9.5px;
+  width: 21px;
+  height: 21px;
+  background-position: -50px -32px;
+}
+
+.scrap_box {
+  display: none;
+}
+
+.cart {
+  left: 8px;
+  top: 7.5px;
+  width: 28px;
+  height: 25px;
+  background-position: -72px -32px;
+}
+
+.write {
+  left: 10.5px;
+  top: 9px;
+  width: 24px;
+  height: 22px;
+  background-position: -100px -32px;
+}
+
+.search {
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  border-radius: 4px;
+}
+
+.search>input {
+  width: 160px;
+  height: 38px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.search>span {
+  display: block;
+  width: 17px;
+  height: 17px;
+  background-position: -125px -32px;
+  margin: 0 11px;
+}
+
+@media(max-width:1200px) {
+  .w1200 {
+    width: 100%;
+  }
+
+  .sp_common {
+    background-image: url(../img/sp_common_t.png);
+    background-size: 112px auto;
+  }
+
+  #header_bottom h1 a {
+    width: 112px;
+    height: 22px;
+  }
+
+  .m_btns {
+    width: 18px;
+    height: 12px;
+    margin-left: 20px;
+    background-position: -16px -23px;
+  }
+
+  .mypage {
+    left: 12px;
+    top: 9.5px;
+    width: 16px;
+    height: 15px;
+    background-position: -34px -23px;
+  }
+
+  .cart {
+    left: 8px;
+    top: 7.5px;
+    width: 19px;
+    height: 17px;
+    background-position: -50px -23px;
+  }
+
+  .write {
+    left: 10.5px;
+    top: 9px;
+    width: 18px;
+    height: 15px;
+    background-position: -69px -23px;
+  }
+
+  .search>span {
+    display: block;
+    width: 13px;
+    height: 13px;
+    background-position: -86px -23px;
+    margin: 0 11px;
+  }
+
+  .h_bot_right ul li {
+    width: 32px;
+    height: 28px;
+  }
+
+}
+
+@media (max-width:767px) {
+  .sp_common {
+    background-image: url(../img/sp_common_m.png);
+    background-size: 100px auto;
+  }
+
+  #header_top_wrap {
+    display: none;
+  }
+
+  .h_bot_left nav {
+    display: none;
+  }
+
+  .h_bot_right li:first-child {
+    display: none;
+  }
+
+  .h_bot_right li:last-child {
+    display: none;
+  }
+
+
+  #header_bottom h1 a {
+    width: 88px;
+    height: 17px;
+  }
+
+  #h_bot_fix {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 12px 0;
+    width: 100%;
+  }
+
+  .m_btns {
+    position: absolute;
+    width: 20px;
+    height: 13px;
+    /* margin-left: 20px; */
+    left: 10px;
+    top: 20px;
+    background-position: 0px -37px;
+  }
+
+  .mypage {
+    display: none;
+  }
+
+  .cart {
+    left: 5.5px;
+    top: 4px;
+    width: 19px;
+    height: 20px;
+    background-position: 0px -17px;
+  }
+
+  .write {
+    display: none;
+  }
+
+  .scrap_box {
+    display: block;
+  }
+
+  .scrap_box .scrap {
+    left: 9px;
+    top: 5px;
+    width: 14.33px;
+    height: 18px;
+    background-position: -21px -18px;
+  }
+
+  .search>span {
+    display: block;
+    width: 13px;
+    height: 13px;
+    background-position: -86px -23px;
+    margin: 0 11px;
+  }
+
+  .h_bot_right ul li {
+    width: 32px;
+    height: 28px;
+  }
+
+  .h_bot_right {
+    width: 100%;
+    display: flex;
+  }
+
+  .h_bot_right ul {
+    position: absolute;
+    left: 90%;
+  }
+
+  .search {
+    position: relative;
+    top: 30px;
+    width: 90%;
+    max-width: 767px;
+    border-radius: 150px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  #header_bottom_wrap {
+    border: none;
+  }
+}
+
+.mobile {
+  display: none;
+}
+
+/* 첫번째 */
+.slide {
+  padding: 0 23px;
+  box-sizing: border-box;
+}
+
+.slide_wrap {
+  padding-top: 30px;
+}
+
+.slide_wrap img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.silde_arrow>ul {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  margin-top: 30px;
+}
+
+.silde_arrow li {
+  color: #b3b3b3;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.swiper-pagination {
+  width: 45px;
+  position: relative;
+  bottom: 0;
+  font-size: 0 !important;
+}
+
+/* .swiper-pagination>span이거 span은 어디서 나온거지???ㅇ0ㅇ ->스와이프에서 준거라서 f12 누르고 확인하면 span을 준걸 알수있다!!!!! */
+.swiper-pagination>span {
+  font-size: 12px;
+}
+
+.swiper-pagination-total {
+  margin-left: 14px;
+  position: relative;
+}
+
+.swiper-pagination-total::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: calc(50% - 2px);
+  left: -9px;
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #b3b3b3;
+}
+
+.silde_arrow a {
+  display: block;
+  width: 32px;
+  height: 27px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 7px auto;
+}
+
+.slide_prev {
+  background-image: url(../img/arrow03_l.png);
+}
+
+.slide_next {
+  background-image: url(../img/arrow03_r.png);
+}
+
+
+/* 미디어쿼리 */
+@media (max-width: 780px) {
+  .tab_wrap a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .desc {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
